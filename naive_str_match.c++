@@ -42,3 +42,31 @@ int main()
 
   return 0;
 }
+
+// Algorithm
+// Align pattern at the beginning of text.
+// Compare pattern characters with text characters.
+// If all characters match → pattern found.
+// If mismatch occurs → shift pattern by one position.
+// Repeat until the pattern reaches the end.
+
+// NaiveSearch(text, pattern)
+
+//     n = length(text)
+//     m = length(pattern)
+
+//     for i = 0 to n-m
+
+//         j = 0
+
+//         while j < m
+//               and text[i+j] == pattern[j]
+
+//             j++
+
+//         if j == m
+//             print "Pattern found at i"
+
+// Best:  O(n)
+// Worst: O(nm)
+// Space: O(1)

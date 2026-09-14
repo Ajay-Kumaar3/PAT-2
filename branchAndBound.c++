@@ -98,3 +98,41 @@ int main()
 
   return 0;
 }
+
+// Algorithm :
+// Sort jobs by decreasing profit.
+// Start with no jobs selected.
+// For each job, create two branches:
+// Include job
+// Exclude job
+// If included, place it in the latest available slot before its deadline.
+// Calculate an optimistic bound.
+// If bound ≤ current best profit, prune the branch.
+// Continue until all jobs are considered.
+// The highest profit is the answer.
+
+
+// BranchAndBound(index, profit)
+
+//     if index == number of jobs
+//         update best profit
+//         return
+
+//     bound = calculateBound(index, profit)
+
+//     if bound <= bestProfit
+//         return
+
+//     if a free slot exists before deadline
+
+//         put job in slot
+
+//         BranchAndBound(index + 1,
+//                        profit + job.profit)
+
+//         remove job from slot
+
+//     // Exclude job
+//     BranchAndBound(index + 1, profit)
+
+// O(2ⁿ × n) worst case

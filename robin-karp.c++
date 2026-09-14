@@ -65,3 +65,33 @@ int main()
 
   return 0;
 }
+
+// Algorithm
+// Calculate hash of pattern.
+// Calculate hash of first text window.
+// Compare hashes.
+// If hashes match, compare actual characters.
+// Move the window one position.
+// Calculate the new hash using rolling hash.
+// Repeat.
+
+// RabinKarp(text, pattern)
+
+//     calculate patternHash
+
+//     calculate hash of first window
+
+//     for i = 0 to n-m
+
+//         if patternHash == textHash
+
+//             compare actual characters
+
+//             if equal
+//                 print match
+
+//         calculate hash of next window
+
+// Average = O(n+m)
+// Worst   = O(nm)
+// Space   = O(1)

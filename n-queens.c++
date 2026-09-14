@@ -79,3 +79,30 @@ int main()
 
   return 0;
 }
+
+// Algorithm
+// Start from the first row.
+// Try placing a queen in every column.
+// Check whether the position is safe.
+// If safe, place the queen.
+// Recursively solve the next row.
+// If no solution is possible, remove the queen and backtrack.
+// Continue until all queens are placed.
+
+// NQueens(row)
+
+//     if row == N
+//         print solution
+//         return
+
+//     for col = 0 to N-1
+
+//         if position(row, col) is safe
+
+//             place queen at (row, col)
+
+//             NQueens(row + 1)
+
+//             remove queen
+
+// Worst case ≈ O(N!)
