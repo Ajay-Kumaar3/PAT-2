@@ -135,4 +135,7 @@ int main()
 //     // Exclude job
 //     BranchAndBound(index + 1, profit)
 
-// O(2ⁿ × n) worst case
+// O(2ⁿ × n) worst case8jjhghhhhhhhgggggggggggghhhhhggghghghhhhghhhhhhhhhhhhh
+
+
+                                                                                                                                                                                                                              
